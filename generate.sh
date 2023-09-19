@@ -1,5 +1,6 @@
 #!/bin/bash
 
+BASEDIR=$(dirname "$BASH_SOURCE")
 #https://devhints.io/git-log-format
 revlist=$(git rev-list --no-merges HEAD)
 (
@@ -147,4 +148,4 @@ revlist=$(git rev-list --no-merges HEAD)
 	done
 	echo '		</ul>'
 	echo '<main></body></html>'
-) > index.html
+) > $BASEDIR/index.html
