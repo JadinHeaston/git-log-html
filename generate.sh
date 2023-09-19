@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #https://devhints.io/git-log-format
 revlist=$(git rev-list --no-merges HEAD)
 (
